@@ -1,0 +1,48 @@
+/courses - no global access
+	/[course] - public
+		/sections - public
+			/[section] - public
+				/reviews - private
+		/reviews - private
+
+/coursehistories - no global access
+	/[course] - public
+
+/depts - public
+	/[dept] - public	
+
+/instructors - no global access
+	/[instructor] - public
+
+/semesters
+	/[semester]
+		/[dept]
+
+/[section]/review/[instructor]
+
+
+
+
+examples:
+	[course] - 2014c-cis-121
+	[dept] - cis
+	[section] - 001
+	[semester] - 2014c
+	[instructor] - 6069-benedict-brown
+
+
+issues:
+/[course]/history
+	- alias doesn't work; must just use /coursehistories/[course]
+
+/[course]/section/001
+	- "section" should be "sections"
+
+/section/[section]
+	- "section" should be "sections"
+
+/[section]/review/instructorpennkey
+	- "instructorpennkey" should be "[instructorID]"
+
+
+
