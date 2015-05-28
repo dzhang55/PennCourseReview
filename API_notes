@@ -1,37 +1,48 @@
+Penn Course Review API overview: http://pennlabs.org/console/docs.html
+
+The documentation for the Penn Course Review API has many issues. These notes help makes sense of the documentation and help users know what kind of URLs correspond to valid queries.
+
+query format: http://api.penncoursereview.com/v1/[QUERY]?token=public
+example query: http://api.penncoursereview.com/v1/depts/cis?token=public
+
+Known Working URLS:
+
 /courses - no global access
-	/[course] - public
-		/sections - public
-			/[section] - public
+	/[course]
+		/sections
+			/[section]
 				/reviews - private
 		/reviews - private
 
 /coursehistories - no global access
-	/[course] - public
+	/[course]
 
-/depts - public
-	/[dept] - public	
+/depts
+	/[dept]	
 
 /instructors - no global access
-	/[instructor] - public
+	/[instructor]
 
 /semesters
 	/[semester]
 		/[dept]
 
-/[section]/review/[instructor]
-
-
-
+/sections
+	/[course-section]
+		/reviews - private
+			/[instructor]
 
 examples:
 	[course] - 2014c-cis-121
+	[course-section] - 2014c-cis-121-001
 	[dept] - cis
 	[section] - 001
 	[semester] - 2014c
 	[instructor] - 6069-benedict-brown
 
 
-issues:
+Known Issues:
+
 /[course]/history
 	- alias doesn't work; must just use /coursehistories/[course]
 
@@ -43,6 +54,4 @@ issues:
 
 /[section]/review/instructorpennkey
 	- "instructorpennkey" should be "[instructorID]"
-
-
-
+	
