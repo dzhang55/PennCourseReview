@@ -1,4 +1,5 @@
 Penn Course Review API overview: http://pennlabs.org/console/docs.html
+Console (useful for reading the JSON): http://pennlabs.org/console/#/
 
 The documentation for the Penn Course Review API has many issues. These notes help makes sense of the documentation and help users know what kind of URLs correspond to valid queries.
 

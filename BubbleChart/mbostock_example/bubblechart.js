@@ -1,6 +1,6 @@
 // This is an annotated version of the source code found here: 
 // http://bl.ocks.org/mbostock/4063269
-// Any somewhat abiguous line is explained in the comment immediately
+// Any somewhat ambiguous line is explained in the comment immediately
 // above that line. Additionally, the code is reformatted in some
 // areas to make the code's function more clear.
 var diameter = 960,
