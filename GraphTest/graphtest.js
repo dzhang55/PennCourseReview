@@ -69,8 +69,8 @@ svg.selectAll("rect")
 
 }
 
-var w = 500;
-var h = 300;
+var w = 800;
+var h = 600;
 var svg = d3.select("body")
 	.append("svg")
 	.attr("width", w)
